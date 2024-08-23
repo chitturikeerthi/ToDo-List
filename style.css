@@ -1,0 +1,253 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+.images {
+    background-image: url("file:///c%3A/Users/chitt/OneDrive/Desktop/Task/Task1/Screenshot%202024-08-20%20195002.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-box1 {
+    height: 500px;
+    width: 380px;
+    align-items: center;
+    position: sticky;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+#input-box {
+    margin-left: 30px;
+}
+
+img {
+    height: 40px;
+    width: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2e2d2d;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    opacity: 1;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    font-size: 18px;
+    transition: 0.2s;
+    color: whitesmoke;
+    user-select: none;
+}
+
+ul li:hover {
+    background: #333;
+}
+
+ul li.checked {
+    background: black;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #ff5945;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #ff5945;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+/* ----------------------------------- */
+
+  @media (max-width: 850px) {
+    .main-box1 {
+        width: 40%;
+        height: 60%;
+        top: 50px;
+        margin-left: 20%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .row {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px 0;
+    }
+} 
+/* ------------------------------------------------- */
+@media (max-width: 717px) {
+    .main-box1 {
+        width: 45%;
+        height: 60%;
+        top: 50px;
+        margin-left: 20%;
+    }
+    .img{
+        height: 10%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    button {
+        width: 30%; 
+        padding: 14px 0; 
+        font-size: 10px; 
+        position: absolute;
+        left: 60%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center; 
+    }
+} 
+/* ---------------------------------------------------------- */
+@media (max-width: 508px) {
+    .main-box1 {
+        width: 45%;
+        height: 60%;
+        top: 50px;
+        margin-left: 20%;
+    }
+    h1 img{
+        position: absolute;
+        left:75%;
+        top:10%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    button {
+        width: 30%; 
+        padding: 14px 0; 
+        font-size: 10px; 
+        position: absolute;
+        left: 60%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center; 
+    }
+} 
+/* --------------------------------------------------------------- */
+@media (max-width: 440px) {
+    .main-box1 {
+        width: 50%;
+        height: 60%;
+        top: 50px;
+        position: absolute;
+        left:30%;
+        margin-left: 20%;
+    }
+    h1 img{
+        position: absolute;
+        left:75%;
+        top:10%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    button {
+        width: 30%; 
+        padding: 14px 0; 
+        font-size: 10px; 
+        position: absolute;
+        left: 60%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center; 
+    }
+} 
